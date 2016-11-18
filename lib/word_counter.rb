@@ -7,7 +7,7 @@ class String
         word_counter += 1
       end
     end
-    "There is #{word_counter} instance(s) of #{word_to_count} in your inputted sentence"
+    "There are <span class='count'>#{word_counter}</span> instance(s) of '<span class='user_word'>#{word_to_count}</span>' in your inputted sentence"
   end
 end
 

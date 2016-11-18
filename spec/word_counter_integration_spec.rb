@@ -9,6 +9,6 @@ describe('the word count path', {:type => :feature}) do
     fill_in('sentence', :with => 'Hello my name is Adam, yes it is')
     fill_in('word', :with => 'is')
     click_button('Count your words!')
-    expect(page).to have_content('There is 2 instance(s) of is in your inputted sentence')
+    expect(page).to have_content("Your word count: There are 2 instance(s) of 'is' in your inputted sentence Try Another Word!")
   end
 end

@@ -1,0 +1,31 @@
+body {
+  font-family: monospace;
+}
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+  border-radius: 4px;
+}
+.result {
+  font-size: 18px;
+}
+#sentence {
+  width:500px;
+}
+#word {
+  width: 150px;
+}
+
+.count {
+  text-decoration: underline;
+  color: blue;
+  font-style: italic;
+  font-weight: bold;
+}
+.user_word {
+  color: blue;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+}
