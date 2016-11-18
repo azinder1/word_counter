@@ -12,8 +12,7 @@ class String
 end
 
 
-
-# class String
+# class String  <=====Secondary function that I want to work on to design word cloud
 #   define_method(:word_counter) do
 #     words = self.split(" ")
 #     word_count = []
@@ -22,8 +21,8 @@ end
 #       counts[word] += 1
 #     end
 #     counts.keys.each() do |countskey|
-#        word_count.push(counts[countskey].to_s + ": " + countskey)
+#         word_count.push("countskey + " : " + counts[countskey].to_s )
 #     end
-#     word_count.join(" ")
+#     word_count.join("<br>")
 #   end
 # end

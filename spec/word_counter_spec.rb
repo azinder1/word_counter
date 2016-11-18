@@ -2,8 +2,6 @@ require('pry')
 require('rspec')
 require('word_counter')
 
-
-
 describe('String#word_counter') do
   it "can count the occurences of a single word" do
     expect("cat".word_counter("cat")).to(eq("There are <span class='count'>1</span> instance(s) of '<span class='user_word'>cat</span>' in your inputted sentence"))
