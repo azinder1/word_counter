@@ -12,17 +12,20 @@ class String
 end
 
 
-# class String  <=====Secondary function that I want to work on to design word cloud
-#   define_method(:word_counter) do
-#     words = self.split(" ")
-#     word_count = []
-#     counts = Hash.new 0
-#     words.each do |word|
-#       counts[word] += 1
-#     end
-#     counts.keys.each() do |countskey|
-#         word_count.push("countskey + " : " + counts[countskey].to_s )
-#     end
-#     word_count.join("<br>")
-#   end
-# end
+class String
+  define_method(:word_counter) do
+    words = self.concat("-").downcase.gsub!(/[^\w\s\d]/, '').split(" ")
+    word_count = []
+    counts = Hash.new 0
+    words.each do |word|
+      counts[word] += 1
+    end
+    counts = Hash[counts.sort_by{|k,v| v}.reverse]
+    counts.keys.each() do |countskey|
+      if counts[countskey] > 1
+        word_count.push(countskey +  ":" + counts[countskey].to_s )
+      end  
+    end
+    word_count.join(" ")
+  end
+end
